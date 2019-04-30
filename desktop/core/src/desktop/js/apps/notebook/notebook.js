@@ -767,7 +767,7 @@ class Notebook {
 
         const getCoordinator = function() {
           $.get(
-            '/api/schedule/' + _action + '/',
+            '/scheduler/api/schedule/' + _action + '/',
             {
               format: 'json',
               document: self.uuid(),
@@ -848,7 +848,7 @@ class Notebook {
 
     self.showSubmitPopup = function() {
       $.get(
-        '/api/schedule/submit/' + self.coordinatorUuid(),
+        '/scheduler/api/schedule/submit/' + self.coordinatorUuid(),
         {
           format: 'json'
         },
